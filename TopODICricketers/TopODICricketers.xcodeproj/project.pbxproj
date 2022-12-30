@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4342C13F295F950D009DD0BB /* TopODICricketersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C13E295F950D009DD0BB /* TopODICricketersApp.swift */; };
+		4342C143295F950E009DD0BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4342C142295F950E009DD0BB /* Assets.xcassets */; };
+		4342C146295F950E009DD0BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4342C145295F950E009DD0BB /* Preview Assets.xcassets */; };
+		4342C150295F950E009DD0BB /* TopODICricketersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C14F295F950E009DD0BB /* TopODICricketersTests.swift */; };
+		4342C15A295F950E009DD0BB /* TopODICricketersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C159295F950E009DD0BB /* TopODICricketersUITests.swift */; };
+		4342C15C295F950E009DD0BB /* TopODICricketersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C15B295F950E009DD0BB /* TopODICricketersUITestsLaunchTests.swift */; };
+		4342C175295F959C009DD0BB /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C16A295F959C009DD0BB /* LoadingView.swift */; };
+		4342C176295F959C009DD0BB /* PlayerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C16C295F959C009DD0BB /* PlayerList.swift */; };
+		4342C177295F959C009DD0BB /* PlayerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C16D295F959C009DD0BB /* PlayerRow.swift */; };
+		4342C178295F959C009DD0BB /* PlayerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C16F295F959C009DD0BB /* PlayerDetails.swift */; };
+		4342C179295F959C009DD0BB /* StatText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C170295F959C009DD0BB /* StatText.swift */; };
+		4342C17C295F959C009DD0BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C174295F959C009DD0BB /* ContentView.swift */; };
+		4342C181295F9628009DD0BB /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C17E295F9628009DD0BB /* PlayerViewModel.swift */; };
+		4342C183295F9628009DD0BB /* PlayersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C180295F9628009DD0BB /* PlayersListViewModel.swift */; };
+		4342C188295F962E009DD0BB /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C186295F962E009DD0BB /* Player.swift */; };
+		4342C18F295F9638009DD0BB /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C18A295F9638009DD0BB /* ServiceProvider.swift */; };
+		4342C190295F9638009DD0BB /* TopODIPlayers.json in Resources */ = {isa = PBXBuildFile; fileRef = 4342C18C295F9638009DD0BB /* TopODIPlayers.json */; };
+		4342C191295F9638009DD0BB /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C18D295F9638009DD0BB /* WebService.swift */; };
+		4342C192295F9638009DD0BB /* LocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C18E295F9638009DD0BB /* LocalService.swift */; };
+		4342C194295F9FAA009DD0BB /* LoadingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C193295F9FAA009DD0BB /* LoadingImageView.swift */; };
+		4342C196295FA253009DD0BB /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C195295FA253009DD0BB /* WebView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4342C14C295F950E009DD0BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4342C133295F950D009DD0BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4342C13A295F950D009DD0BB;
+			remoteInfo = TopODICricketers;
+		};
+		4342C156295F950E009DD0BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4342C133295F950D009DD0BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4342C13A295F950D009DD0BB;
+			remoteInfo = TopODICricketers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4342C13B295F950D009DD0BB /* TopODICricketers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopODICricketers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4342C13E295F950D009DD0BB /* TopODICricketersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopODICricketersApp.swift; sourceTree = "<group>"; };
+		4342C142295F950E009DD0BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4342C145295F950E009DD0BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4342C14B295F950E009DD0BB /* TopODICricketersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopODICricketersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4342C14F295F950E009DD0BB /* TopODICricketersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopODICricketersTests.swift; sourceTree = "<group>"; };
+		4342C155295F950E009DD0BB /* TopODICricketersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopODICricketersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4342C159295F950E009DD0BB /* TopODICricketersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopODICricketersUITests.swift; sourceTree = "<group>"; };
+		4342C15B295F950E009DD0BB /* TopODICricketersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopODICricketersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4342C16A295F959C009DD0BB /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		4342C16C295F959C009DD0BB /* PlayerList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerList.swift; sourceTree = "<group>"; };
+		4342C16D295F959C009DD0BB /* PlayerRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerRow.swift; sourceTree = "<group>"; };
+		4342C16F295F959C009DD0BB /* PlayerDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetails.swift; sourceTree = "<group>"; };
+		4342C170295F959C009DD0BB /* StatText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatText.swift; sourceTree = "<group>"; };
+		4342C174295F959C009DD0BB /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4342C17E295F9628009DD0BB /* PlayerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		4342C180295F9628009DD0BB /* PlayersListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersListViewModel.swift; sourceTree = "<group>"; };
+		4342C186295F962E009DD0BB /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		4342C18A295F9638009DD0BB /* ServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		4342C18C295F9638009DD0BB /* TopODIPlayers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopODIPlayers.json; sourceTree = "<group>"; };
+		4342C18D295F9638009DD0BB /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		4342C18E295F9638009DD0BB /* LocalService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalService.swift; sourceTree = "<group>"; };
+		4342C193295F9FAA009DD0BB /* LoadingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingImageView.swift; sourceTree = "<group>"; };
+		4342C195295FA253009DD0BB /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4342C138295F950D009DD0BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4342C148295F950E009DD0BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4342C152295F950E009DD0BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4342C132295F950D009DD0BB = {
+			isa = PBXGroup;
+			children = (
+				4342C13D295F950D009DD0BB /* TopODICricketers */,
+				4342C14E295F950E009DD0BB /* TopODICricketersTests */,
+				4342C158295F950E009DD0BB /* TopODICricketersUITests */,
+				4342C13C295F950D009DD0BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4342C13C295F950D009DD0BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4342C13B295F950D009DD0BB /* TopODICricketers.app */,
+				4342C14B295F950E009DD0BB /* TopODICricketersTests.xctest */,
+				4342C155295F950E009DD0BB /* TopODICricketersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4342C13D295F950D009DD0BB /* TopODICricketers */ = {
+			isa = PBXGroup;
+			children = (
+				4342C189295F9638009DD0BB /* Service */,
+				4342C184295F962E009DD0BB /* Model */,
+				4342C17D295F9628009DD0BB /* ViewModel */,
+				4342C168295F959C009DD0BB /* View */,
+				4342C13E295F950D009DD0BB /* TopODICricketersApp.swift */,
+				4342C142295F950E009DD0BB /* Assets.xcassets */,
+				4342C144295F950E009DD0BB /* Preview Content */,
+			);
+			path = TopODICricketers;
+			sourceTree = "<group>";
+		};
+		4342C144295F950E009DD0BB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4342C145295F950E009DD0BB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4342C14E295F950E009DD0BB /* TopODICricketersTests */ = {
+			isa = PBXGroup;
+			children = (
+				4342C14F295F950E009DD0BB /* TopODICricketersTests.swift */,
+			);
+			path = TopODICricketersTests;
+			sourceTree = "<group>";
+		};
+		4342C158295F950E009DD0BB /* TopODICricketersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4342C159295F950E009DD0BB /* TopODICricketersUITests.swift */,
+				4342C15B295F950E009DD0BB /* TopODICricketersUITestsLaunchTests.swift */,
+			);
+			path = TopODICricketersUITests;
+			sourceTree = "<group>";
+		};
+		4342C168295F959C009DD0BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4342C169295F959C009DD0BB /* UtilityViews */,
+				4342C16B295F959C009DD0BB /* PlayerList */,
+				4342C16E295F959C009DD0BB /* PlayerDetails */,
+				4342C174295F959C009DD0BB /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4342C169295F959C009DD0BB /* UtilityViews */ = {
+			isa = PBXGroup;
+			children = (
+				4342C16A295F959C009DD0BB /* LoadingView.swift */,
+				4342C193295F9FAA009DD0BB /* LoadingImageView.swift */,
+				4342C195295FA253009DD0BB /* WebView.swift */,
+			);
+			path = UtilityViews;
+			sourceTree = "<group>";
+		};
+		4342C16B295F959C009DD0BB /* PlayerList */ = {
+			isa = PBXGroup;
+			children = (
+				4342C16C295F959C009DD0BB /* PlayerList.swift */,
+				4342C16D295F959C009DD0BB /* PlayerRow.swift */,
+			);
+			path = PlayerList;
+			sourceTree = "<group>";
+		};
+		4342C16E295F959C009DD0BB /* PlayerDetails */ = {
+			isa = PBXGroup;
+			children = (
+				4342C16F295F959C009DD0BB /* PlayerDetails.swift */,
+				4342C170295F959C009DD0BB /* StatText.swift */,
+			);
+			path = PlayerDetails;
+			sourceTree = "<group>";
+		};
+		4342C17D295F9628009DD0BB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4342C17E295F9628009DD0BB /* PlayerViewModel.swift */,
+				4342C180295F9628009DD0BB /* PlayersListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4342C184295F962E009DD0BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4342C186295F962E009DD0BB /* Player.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4342C189295F9638009DD0BB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4342C18A295F9638009DD0BB /* ServiceProvider.swift */,
+				4342C18B295F9638009DD0BB /* Local */,
+				4342C18D295F9638009DD0BB /* WebService.swift */,
+				4342C18E295F9638009DD0BB /* LocalService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4342C18B295F9638009DD0BB /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				4342C18C295F9638009DD0BB /* TopODIPlayers.json */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4342C13A295F950D009DD0BB /* TopODICricketers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4342C15F295F950E009DD0BB /* Build configuration list for PBXNativeTarget "TopODICricketers" */;
+			buildPhases = (
+				4342C137295F950D009DD0BB /* Sources */,
+				4342C138295F950D009DD0BB /* Frameworks */,
+				4342C139295F950D009DD0BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TopODICricketers;
+			productName = TopODICricketers;
+			productReference = 4342C13B295F950D009DD0BB /* TopODICricketers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4342C14A295F950E009DD0BB /* TopODICricketersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4342C162295F950E009DD0BB /* Build configuration list for PBXNativeTarget "TopODICricketersTests" */;
+			buildPhases = (
+				4342C147295F950E009DD0BB /* Sources */,
+				4342C148295F950E009DD0BB /* Frameworks */,
+				4342C149295F950E009DD0BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4342C14D295F950E009DD0BB /* PBXTargetDependency */,
+			);
+			name = TopODICricketersTests;
+			productName = TopODICricketersTests;
+			productReference = 4342C14B295F950E009DD0BB /* TopODICricketersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4342C154295F950E009DD0BB /* TopODICricketersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4342C165295F950E009DD0BB /* Build configuration list for PBXNativeTarget "TopODICricketersUITests" */;
+			buildPhases = (
+				4342C151295F950E009DD0BB /* Sources */,
+				4342C152295F950E009DD0BB /* Frameworks */,
+				4342C153295F950E009DD0BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4342C157295F950E009DD0BB /* PBXTargetDependency */,
+			);
+			name = TopODICricketersUITests;
+			productName = TopODICricketersUITests;
+			productReference = 4342C155295F950E009DD0BB /* TopODICricketersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4342C133295F950D009DD0BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					4342C13A295F950D009DD0BB = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					4342C14A295F950E009DD0BB = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 4342C13A295F950D009DD0BB;
+					};
+					4342C154295F950E009DD0BB = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 4342C13A295F950D009DD0BB;
+					};
+				};
+			};
+			buildConfigurationList = 4342C136295F950D009DD0BB /* Build configuration list for PBXProject "TopODICricketers" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4342C132295F950D009DD0BB;
+			productRefGroup = 4342C13C295F950D009DD0BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4342C13A295F950D009DD0BB /* TopODICricketers */,
+				4342C14A295F950E009DD0BB /* TopODICricketersTests */,
+				4342C154295F950E009DD0BB /* TopODICricketersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4342C139295F950D009DD0BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4342C146295F950E009DD0BB /* Preview Assets.xcassets in Resources */,
+				4342C143295F950E009DD0BB /* Assets.xcassets in Resources */,
+				4342C190295F9638009DD0BB /* TopODIPlayers.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4342C149295F950E009DD0BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4342C153295F950E009DD0BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4342C137295F950D009DD0BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4342C181295F9628009DD0BB /* PlayerViewModel.swift in Sources */,
+				4342C13F295F950D009DD0BB /* TopODICricketersApp.swift in Sources */,
+				4342C188295F962E009DD0BB /* Player.swift in Sources */,
+				4342C18F295F9638009DD0BB /* ServiceProvider.swift in Sources */,
+				4342C176295F959C009DD0BB /* PlayerList.swift in Sources */,
+				4342C178295F959C009DD0BB /* PlayerDetails.swift in Sources */,
+				4342C191295F9638009DD0BB /* WebService.swift in Sources */,
+				4342C194295F9FAA009DD0BB /* LoadingImageView.swift in Sources */,
+				4342C17C295F959C009DD0BB /* ContentView.swift in Sources */,
+				4342C196295FA253009DD0BB /* WebView.swift in Sources */,
+				4342C175295F959C009DD0BB /* LoadingView.swift in Sources */,
+				4342C183295F9628009DD0BB /* PlayersListViewModel.swift in Sources */,
+				4342C179295F959C009DD0BB /* StatText.swift in Sources */,
+				4342C177295F959C009DD0BB /* PlayerRow.swift in Sources */,
+				4342C192295F9638009DD0BB /* LocalService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4342C147295F950E009DD0BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4342C150295F950E009DD0BB /* TopODICricketersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4342C151295F950E009DD0BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4342C15C295F950E009DD0BB /* TopODICricketersUITestsLaunchTests.swift in Sources */,
+				4342C15A295F950E009DD0BB /* TopODICricketersUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4342C14D295F950E009DD0BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4342C13A295F950D009DD0BB /* TopODICricketers */;
+			targetProxy = 4342C14C295F950E009DD0BB /* PBXContainerItemProxy */;
+		};
+		4342C157295F950E009DD0BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4342C13A295F950D009DD0BB /* TopODICricketers */;
+			targetProxy = 4342C156295F950E009DD0BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4342C15D295F950E009DD0BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4342C15E295F950E009DD0BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4342C160295F950E009DD0BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TopODICricketers/Preview Content\"";
+				DEVELOPMENT_TEAM = N6859F3C8L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohitragmahale.TopODICricketers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4342C161295F950E009DD0BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TopODICricketers/Preview Content\"";
+				DEVELOPMENT_TEAM = N6859F3C8L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohitragmahale.TopODICricketers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4342C163295F950E009DD0BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6859F3C8L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohitragmahale.TopODICricketersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TopODICricketers.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TopODICricketers";
+			};
+			name = Debug;
+		};
+		4342C164295F950E009DD0BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6859F3C8L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohitragmahale.TopODICricketersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TopODICricketers.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TopODICricketers";
+			};
+			name = Release;
+		};
+		4342C166295F950E009DD0BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6859F3C8L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohitragmahale.TopODICricketersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TopODICricketers;
+			};
+			name = Debug;
+		};
+		4342C167295F950E009DD0BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6859F3C8L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohitragmahale.TopODICricketersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TopODICricketers;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4342C136295F950D009DD0BB /* Build configuration list for PBXProject "TopODICricketers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4342C15D295F950E009DD0BB /* Debug */,
+				4342C15E295F950E009DD0BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4342C15F295F950E009DD0BB /* Build configuration list for PBXNativeTarget "TopODICricketers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4342C160295F950E009DD0BB /* Debug */,
+				4342C161295F950E009DD0BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4342C162295F950E009DD0BB /* Build configuration list for PBXNativeTarget "TopODICricketersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4342C163295F950E009DD0BB /* Debug */,
+				4342C164295F950E009DD0BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4342C165295F950E009DD0BB /* Build configuration list for PBXNativeTarget "TopODICricketersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4342C166295F950E009DD0BB /* Debug */,
+				4342C167295F950E009DD0BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4342C133295F950D009DD0BB /* Project object */;
+}
