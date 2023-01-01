@@ -12,12 +12,10 @@ struct PlayerRow: View {
     var body: some View {
         HStack {
             LoadingImageView(url: player.imageLink)
-            VStack {
+            VStack(alignment: .leading) {
                 Text(player.name).font(.title)
                     .fixedSize(horizontal: false, vertical: true)
-                    .frame(maxWidth: .infinity, alignment: .leading)
                 Text(player.country).font(.title2)
-                    .frame(maxWidth: .infinity, alignment: .leading)
             }
             Spacer()
         }

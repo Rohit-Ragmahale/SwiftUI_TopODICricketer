@@ -22,12 +22,14 @@
 		4342C181295F9628009DD0BB /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C17E295F9628009DD0BB /* PlayerViewModel.swift */; };
 		4342C183295F9628009DD0BB /* PlayersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C180295F9628009DD0BB /* PlayersListViewModel.swift */; };
 		4342C188295F962E009DD0BB /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C186295F962E009DD0BB /* Player.swift */; };
-		4342C18F295F9638009DD0BB /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C18A295F9638009DD0BB /* ServiceProvider.swift */; };
+		4342C18F295F9638009DD0BB /* DataServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C18A295F9638009DD0BB /* DataServiceProvider.swift */; };
 		4342C190295F9638009DD0BB /* TopODIPlayers.json in Resources */ = {isa = PBXBuildFile; fileRef = 4342C18C295F9638009DD0BB /* TopODIPlayers.json */; };
-		4342C191295F9638009DD0BB /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C18D295F9638009DD0BB /* WebService.swift */; };
-		4342C192295F9638009DD0BB /* LocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C18E295F9638009DD0BB /* LocalService.swift */; };
+		4342C191295F9638009DD0BB /* WebDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C18D295F9638009DD0BB /* WebDataService.swift */; };
+		4342C192295F9638009DD0BB /* MockDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C18E295F9638009DD0BB /* MockDataService.swift */; };
 		4342C194295F9FAA009DD0BB /* LoadingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C193295F9FAA009DD0BB /* LoadingImageView.swift */; };
 		4342C196295FA253009DD0BB /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4342C195295FA253009DD0BB /* WebView.swift */; };
+		435BD55D2961172F00C2F508 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BD55C2961172F00C2F508 /* NetworkManager.swift */; };
+		435BD55F29611A7500C2F508 /* NetworkURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BD55E29611A7500C2F508 /* NetworkURLRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,12 +68,14 @@
 		4342C17E295F9628009DD0BB /* PlayerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
 		4342C180295F9628009DD0BB /* PlayersListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersListViewModel.swift; sourceTree = "<group>"; };
 		4342C186295F962E009DD0BB /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		4342C18A295F9638009DD0BB /* ServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		4342C18A295F9638009DD0BB /* DataServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServiceProvider.swift; sourceTree = "<group>"; };
 		4342C18C295F9638009DD0BB /* TopODIPlayers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopODIPlayers.json; sourceTree = "<group>"; };
-		4342C18D295F9638009DD0BB /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
-		4342C18E295F9638009DD0BB /* LocalService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalService.swift; sourceTree = "<group>"; };
+		4342C18D295F9638009DD0BB /* WebDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebDataService.swift; sourceTree = "<group>"; };
+		4342C18E295F9638009DD0BB /* MockDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockDataService.swift; sourceTree = "<group>"; };
 		4342C193295F9FAA009DD0BB /* LoadingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingImageView.swift; sourceTree = "<group>"; };
 		4342C195295FA253009DD0BB /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		435BD55C2961172F00C2F508 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		435BD55E29611A7500C2F508 /* NetworkURLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkURLRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,20 +221,38 @@
 		4342C189295F9638009DD0BB /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				4342C18A295F9638009DD0BB /* ServiceProvider.swift */,
-				4342C18B295F9638009DD0BB /* Local */,
-				4342C18D295F9638009DD0BB /* WebService.swift */,
-				4342C18E295F9638009DD0BB /* LocalService.swift */,
+				4342C18A295F9638009DD0BB /* DataServiceProvider.swift */,
+				435BD55B296116E300C2F508 /* Web */,
+				4342C18B295F9638009DD0BB /* Mock */,
 			);
 			path = Service;
 			sourceTree = "<group>";
 		};
-		4342C18B295F9638009DD0BB /* Local */ = {
+		4342C18B295F9638009DD0BB /* Mock */ = {
 			isa = PBXGroup;
 			children = (
+				4342C18E295F9638009DD0BB /* MockDataService.swift */,
 				4342C18C295F9638009DD0BB /* TopODIPlayers.json */,
 			);
-			path = Local;
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		435BD55B296116E300C2F508 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				435BD56029611CF500C2F508 /* Network */,
+				4342C18D295F9638009DD0BB /* WebDataService.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		435BD56029611CF500C2F508 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				435BD55C2961172F00C2F508 /* NetworkManager.swift */,
+				435BD55E29611A7500C2F508 /* NetworkURLRequest.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,20 +387,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				4342C181295F9628009DD0BB /* PlayerViewModel.swift in Sources */,
+				435BD55F29611A7500C2F508 /* NetworkURLRequest.swift in Sources */,
 				4342C13F295F950D009DD0BB /* TopODICricketersApp.swift in Sources */,
 				4342C188295F962E009DD0BB /* Player.swift in Sources */,
-				4342C18F295F9638009DD0BB /* ServiceProvider.swift in Sources */,
+				4342C18F295F9638009DD0BB /* DataServiceProvider.swift in Sources */,
 				4342C176295F959C009DD0BB /* PlayerList.swift in Sources */,
 				4342C178295F959C009DD0BB /* PlayerDetails.swift in Sources */,
-				4342C191295F9638009DD0BB /* WebService.swift in Sources */,
+				4342C191295F9638009DD0BB /* WebDataService.swift in Sources */,
 				4342C194295F9FAA009DD0BB /* LoadingImageView.swift in Sources */,
 				4342C17C295F959C009DD0BB /* ContentView.swift in Sources */,
 				4342C196295FA253009DD0BB /* WebView.swift in Sources */,
 				4342C175295F959C009DD0BB /* LoadingView.swift in Sources */,
+				435BD55D2961172F00C2F508 /* NetworkManager.swift in Sources */,
 				4342C183295F9628009DD0BB /* PlayersListViewModel.swift in Sources */,
 				4342C179295F959C009DD0BB /* StatText.swift in Sources */,
 				4342C177295F959C009DD0BB /* PlayerRow.swift in Sources */,
-				4342C192295F9638009DD0BB /* LocalService.swift in Sources */,
+				4342C192295F9638009DD0BB /* MockDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

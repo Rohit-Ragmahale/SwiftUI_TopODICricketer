@@ -11,15 +11,15 @@ import SwiftUI
 import Combine
 
 class PlayersListViewModel: ObservableObject {
-    private let service: ServiceProvider
+    private let service: DataServiceProvider
     private var allPlayersList: [PlayerViewModel] = []
 
     @Published var playersList: [PlayerViewModel] = []
     @Published var searchText: String = ""
-    
+    @Published var isDataLoading: Bool = false
     var anyCancellable: AnyCancellable?
 
-    init(service: ServiceProvider) {
+    init(service: DataServiceProvider) {
         self.service = service
     }
 
@@ -42,7 +42,18 @@ class PlayersListViewModel: ObservableObject {
     }
     
     private func fetchPlayerList() {
-        anyCancellable = self.service.getTopODPlayerList().sink { _ in } receiveValue: { players in
+        isDataLoading = true
+        anyCancellable = self.service.loadODIPlayerData().sink { completion in
+            switch completion {
+            case .finished:
+                print("All OK")
+            case .failure(let error):
+                print("We have any error \n\(error)")
+                self.playersList = []
+            }
+            self.isDataLoading = false
+        } receiveValue: { (players: [Player]) in
+            self.isDataLoading = false
             self.playersList = players.map({ player in
                 PlayerViewModel(player: player)
             })

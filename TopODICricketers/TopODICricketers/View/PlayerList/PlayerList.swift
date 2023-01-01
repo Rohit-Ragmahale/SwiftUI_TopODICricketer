@@ -17,7 +17,7 @@ struct PlayerList: View {
     var body: some View {
         return NavigationView {
             ZStack {
-                if playerListViewModel.playersList.isEmpty {
+                if playerListViewModel.isDataLoading {
                     LoadingView(tintColor: .black, scaleSize: 2.0).padding(.bottom,50)
                 }
                 VStack {
@@ -41,8 +41,8 @@ struct PlayerList_Previews: PreviewProvider {
     @State static var players: [Player] = []
     static var previews: some View {
         Group {
-            PlayerList(playerListViewModel: PlayersListViewModel(service: LocalService())).previewDevice("iPhone 14")
-            PlayerList(playerListViewModel: PlayersListViewModel(service: LocalService())).previewDevice("iPhone SE")
+            PlayerList(playerListViewModel: PlayersListViewModel(service: MockDataService())).previewDevice("iPhone 14")
+            PlayerList(playerListViewModel: PlayersListViewModel(service: MockDataService())).previewDevice("iPhone SE")
         }
     }
 }

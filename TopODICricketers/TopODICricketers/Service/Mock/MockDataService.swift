@@ -9,17 +9,17 @@ import UIKit
 import SwiftUI
 import Combine
 
-class LocalService: ServiceProvider {
-    func getTopODPlayerList() -> AnyPublisher<[Player], Error> {
+class MockDataService: DataServiceProvider {
+    func loadODIPlayerData<T>() -> AnyPublisher<T, Error> where T : Decodable {
         if let data = getlocalData() {
         return Just(data)
-                .decode(type: [Player].self, decoder: JSONDecoder())
+                .decode(type: T.self, decoder: JSONDecoder())
                 .delay(for: 3, scheduler: RunLoop.main)
                 .eraseToAnyPublisher()
         }
         return Just(Data())
-            .setFailureType(to: Error.self)
-            .decode(type: [Player].self, decoder: JSONDecoder())
+            .setFailureType(to: NetworkError.self)
+            .decode(type: T.self, decoder: JSONDecoder())
             .eraseToAnyPublisher()
     }
 

@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            PlayerList(playerListViewModel: PlayersListViewModel(service: LocalService()))
+            PlayerList(playerListViewModel: PlayersListViewModel(service: WebDataService()))
         }.background(Color.red)
     }
 }
