@@ -18,13 +18,14 @@ private let exportOptionDownload: String = "download"
 
 class WebDataService: DataServiceProvider {
     let networkManger: NetworkServiceProvider
-    
     init(networkManger: NetworkServiceProvider = NetworkManager()) {
         self.networkManger = networkManger
     }
 
     func loadODIPlayerData<T>() -> AnyPublisher<T, Error> where T : Decodable {
-        let networkRequest = NetworkURLRequest<T>.init(url: URL(string: odiPlayers)!, parameters: [docIDKey: docID, exportKey: exportOptionDownload])
+        let networkRequest = NetworkURLRequest.init(url: URL(string: odiPlayers)!, parameters:
+                                                        [docIDKey: docID,
+                                    exportKey: exportOptionDownload])
         return networkManger.loadData(networkRequest: networkRequest)
     }
 }

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct NetworkURLRequest<T: Decodable> {
+struct NetworkURLRequest {
     let url: URL
     let parameters: [String : CustomStringConvertible]
 

@@ -9,11 +9,11 @@ import Foundation
 import Combine
 
 protocol NetworkServiceProvider {
-    func loadData<T: Decodable>(networkRequest: NetworkURLRequest<T>) -> AnyPublisher<T, Error>
+    func loadData<T: Decodable>(networkRequest: NetworkURLRequest) -> AnyPublisher<T, Error>
 }
 
 class NetworkManager: NetworkServiceProvider {
-    func loadData<T>(networkRequest: NetworkURLRequest<T>) -> AnyPublisher<T, Error> where T : Decodable {
+    func loadData<T>(networkRequest: NetworkURLRequest) -> AnyPublisher<T, Error> where T : Decodable {
         guard let request = networkRequest.request else {
             return Fail(error: NetworkError.invalidRequest)
                 .eraseToAnyPublisher()
